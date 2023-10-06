@@ -1,12 +1,6 @@
-# SANDS
-This is an annonymous repository containing code and data necessary to
-reproduce the results published in
-"Semi-supervised Stance Detection of Tweets Via Distant Network Supervision"
-for the proposed method SANDS and compared baselines.
+# Semi Supervised Stance Detection of Tweets
 
-#### Steps to run SANDS
-1. Install the required packages mentioned [here](SANDS/requirements.txt).
-2. Download and extract the [data](https://drive.google.com/file/d/1kJuNjSGwT3riZFyMsvm28TBbjYY8neER/view?usp=sharing) and place under the
-[working directory](SANDS/)
-3. Change directory to SANDS/SANDS/codes and run 'python3 run_model.py $dataname $splitsize $numclasses' where _$dataname_ can be either INDIA or USA,
-_$splitsize_ among 500, 1000, and, 1500. _$numclasses_ currently support 5 and 7 for USA and INDIA arguments, respectively.
+– After 2016 US presidential elections detecting political stance of tweet became very important and for this task
+even though we are having enormous data there is paucity of labels
+– For this task we have proposed a CNN and LSTM based models and the same has been trained on the data collected
+from Indian and American users in semi supervised manner with guidance of distant network supervision
